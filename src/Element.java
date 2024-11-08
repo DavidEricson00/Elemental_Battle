@@ -41,7 +41,7 @@ public class Element {
     public void setLife(int life) {
         this.life = life;
     }
-	public void Damege(int damage) {
+	public void Damage(int damage) {
 		life -= damage;
 	}
 
