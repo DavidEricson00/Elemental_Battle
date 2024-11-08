@@ -10,6 +10,14 @@ public class Element {
     
     private Random rand = new Random();
     
+    public Element(String name, String type, int life, int atk, int def) {
+        this.name = name;
+        this.type = type;
+        this.life = life;
+        this.atk = atk;
+        this.def = def;
+    }
+    
     // Name methods
     public String getName() {
         return name;
@@ -33,6 +41,9 @@ public class Element {
     public void setLife(int life) {
         this.life = life;
     }
+	public void Damege(int damage) {
+		life -= damage;
+	}
 
     // Attack methods
     public int getAtk() {
@@ -41,6 +52,9 @@ public class Element {
     public void setAtk(int atk) {
         this.atk = atk;
     }
+    public int Attack() {
+    	return rand.nextInt(atk);
+    }
     
     // Defense methods
     public int getDef() {
@@ -48,5 +62,8 @@ public class Element {
     }
     public void setDef(int def) {
         this.def = def;
+    }
+    public int Defend() {
+    	return rand.nextInt(def);
     }
 }
