@@ -45,7 +45,7 @@ public class Battle {
                 System.out.println(defending.getName() + " defended the attack!");
             } else {
                 impact = Math.abs(dmg - def);
-            	if (turn % 2 == 0) {
+            	if (turn % 2 != 0) {
 	                for (int i = 0; i < 7; i++) {
 	                    System.out.print(imageE1[i]);
 	                    System.out.print(empty[i]);
