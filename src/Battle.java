@@ -60,7 +60,11 @@ public class Battle {
 	                    System.out.println(imageE2[i]);
 	                }
                 }
-                System.out.println(attacking.getName() + " deals " + impact + " damage to " + defending.getName());
+            	if (attacking.Effective(attacking.getType(),defending.getType())) {
+                	System.out.println("It's super effective, " + attacking.getName() + " deals " + impact + " damage to " + defending.getName());
+            	} else {
+            		System.out.println(attacking.getName() + " deals " + impact + " damage to " + defending.getName());
+            	}
                 defending.Damage(impact);
             }
 
