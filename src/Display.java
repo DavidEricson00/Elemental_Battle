@@ -106,5 +106,28 @@ public class Display {
         return null;
     }
 
+    public String[] Block() {
+    	return new String[]{
+			"           __            ",
+			"          |  |           ",
+			"          |  |           ",
+			"          |  |           ",
+			"          |  |           ",
+			"          |  |           ",
+			"          |__|           ",
+		};
+    }
+    
+    public String[] Empty() {
+    	return new String[]{
+			"                         ",
+			"                         ",
+			"                         ",
+			"                         ",
+			"                         ",
+			"                         ",
+			"                         ",
+		};
+    }
     
 }
