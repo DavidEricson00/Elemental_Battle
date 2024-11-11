@@ -43,9 +43,11 @@ public class Element {
     public int getLife() {
         return life;
     }
-	public void Damage(int damage) {
-		life -= damage;
-	}
+
+    public void Damage(int damage) {
+        life = Math.max(0, life - damage);
+    }
+
 
     // Attack methods
     public int Attack(String type1, String type2) {
@@ -58,8 +60,4 @@ public class Element {
     public int Defend() {
     	return rand.nextInt(1, def);
     }
-    
-
-
-
 }
