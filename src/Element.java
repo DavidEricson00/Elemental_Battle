@@ -28,9 +28,15 @@ public class Element {
     // Type methods
     public String getType() {
         return type;
-    }
-    public void setType(String type) {
-        this.type = type;
+    }    
+    public boolean Effective(String type1, String type2) {
+        if (type1.equals("fire") && type2.equals("nature")) {
+            return true;
+        } else if (type1.equals("nature") && type2.equals("water")) {
+        	return true;
+        }else if (type1.equals("water") && type2.equals("fire")) {
+        	return true;
+        } return false;
     }
     
     // Life methods
@@ -42,13 +48,18 @@ public class Element {
 	}
 
     // Attack methods
-    public int Attack() {
-    	return rand.nextInt(1, atk);
+    public int Attack(String type1, String type2) {
+    	if (Effective(type1, type2)) {
+    		return rand.nextInt(1, atk)*100;
+    	}return rand.nextInt(1, atk);
     }
     
     // Defense methods
     public int Defend() {
     	return rand.nextInt(1, def);
     }
+    
+
+
 
 }
