@@ -27,7 +27,7 @@ public class Battle {
             System.out.println(defending.getName() + " Defending with: " + def);
 
             if (def > dmg) {
-            	if (turn % 2 == 0) {
+            	if (turn % 2 != 0) {
 	                for (int i = 0; i < 7; i++) {
 	                    System.out.print(imageE1[i]);
 	                    System.out.print(block[i]);
