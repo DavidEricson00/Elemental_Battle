@@ -20,7 +20,7 @@ public class Battle {
         do {
             System.out.println("---------------------------------------");
             System.out.println("Turn " + (turn++));
-            dmg = attacking.Attack();
+            dmg = attacking.Attack(attacking.getType(),defending.getType());
             def = defending.Defend();
 
             System.out.println(attacking.getName() + " Attacking with: " + dmg);
