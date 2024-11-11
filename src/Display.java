@@ -31,9 +31,8 @@ public class Display {
     			" \\_| //           ",
     			"  \\|//            ",
     			"                   ",
-        		};
-        	} 
-        return null;
+        	};
+        } return null;
     }
     
     public String[] getImage2(String type) {
@@ -67,8 +66,7 @@ public class Display {
                 "            \\|//  ",
                 "                   ",
             };
-        }
-        return null;
+        } return null;
     }
     
     public String[] getAttack(String type) {
@@ -102,8 +100,7 @@ public class Display {
                 "*       /    🌿   \\   / ",
                 "  ) 🌿        🌿  (      ",
             };
-        }
-        return null;
+        } return null;
     }
 
     public String[] Block() {
