@@ -6,11 +6,11 @@ public class Battle {
         Element defending = e2;
         Element aux;
 
-        String[] imageE1 = display.getImage1("fire");
-        String[] imageE2 = display.getImage2("water");
+        String[] imageE1 = display.getImage1(e1.getType());
+        String[] imageE2 = display.getImage2(e2.getType());
 
-        String[] atkE1 = display.getAttack("fire");
-        String[] atkE2 = display.getAttack("water");
+        String[] atkE1 = display.getAttack(e1.getType());
+        String[] atkE2 = display.getAttack(e2.getType());
 
         String[] block = display.Block();
         String[] empty = display.Empty();
