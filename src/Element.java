@@ -8,6 +8,8 @@ public class Element {
     private int atk;
     private int def;
     
+
+    
     private Random rand = new Random();
     
     public Element(String name, String type, int life, int atk, int def) {
@@ -41,11 +43,12 @@ public class Element {
 
     // Attack methods
     public int Attack() {
-    	return rand.nextInt(atk);
+    	return rand.nextInt(1, atk);
     }
     
     // Defense methods
     public int Defend() {
-    	return rand.nextInt(def);
+    	return rand.nextInt(1, def);
     }
+
 }
