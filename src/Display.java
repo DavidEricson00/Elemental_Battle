@@ -32,6 +32,16 @@ public class Display {
     			"  \\|//            ",
     			"                   ",
         	};
+        } else if (type.equals("normal")) {
+            return new String[] {
+                "     o  o          ",
+                "  o        o       ",
+                " o      ._. o      ",
+                " o          o      ",
+                "  o        o       ",
+                "     o  o          ",
+                "                   ",
+            };
         } return null;
     }
     
@@ -64,6 +74,16 @@ public class Display {
                 "           | _|  | ",
                 "           \\ |_ //",
                 "            \\|//  ",
+                "                   ",
+            };
+        } else if (type.equals("normal")) {
+            return new String[] {
+                "           o  o    ",
+                "        o        o ",
+                "       o ._.      o",
+                "       o          o",
+                "        o        o ",
+                "           o  o    ",
                 "                   ",
             };
         } return null;
@@ -99,6 +119,16 @@ public class Display {
                 "  /      (    🌿 *       ",
                 "*       /    🌿   \\   / ",
                 "  ) 🌿        🌿  (      ",
+            };
+        } else if (type.equals("normal")) {
+            return new String[] {
+                "   O o      o O   O o     ",
+                "   o O    0 o   O o   0   ",
+                "0       O oo O     O o    ",
+                "  O o      o O   0 o   O o",
+                "  0 o   0 o    0 o     0 o",
+                "0       o O     O o       ",
+                "  O o        o O     0 o  ",
             };
         } return null;
     }
