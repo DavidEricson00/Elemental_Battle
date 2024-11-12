@@ -3,7 +3,7 @@
 </h1>
 
 <div align="center">
-<img src="https://imgur.com/a/Oq9Y8vq.png">
+<img src="https://imgur.com/txKsYRt.png">
 </div>
 
 <h2>💫 About the Game</h2>
