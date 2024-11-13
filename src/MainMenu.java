@@ -23,11 +23,18 @@ public class MainMenu {
                 battle.Fight(e1, e2);
             } else if (option == 2) {
                 System.out.println("-------------------------------");
-                ElementSelection(input);
+                System.out.println("Select the Element 1");
+                e1 = ElementSelection(input);
+                System.out.println("Element 1 selected");
+                System.out.println("Select the Element 2");
+                e2 = ElementSelection(input);
+                System.out.println("Element 2 selected");
+                battle.Fight(e1, e2);
             } else if (option != 3) {
                 System.out.println("Invalid option, please try again.");
             }
         }
+        System.out.println("-------------------------------");
         System.out.println("Thank you for playing!");
         input.close();
     }
