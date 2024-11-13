@@ -29,6 +29,7 @@ public class MainMenu {
             }
         }
         System.out.println("Thank you for playing!");
+        input.close();
     }
     
     public static void Menu() {
@@ -59,46 +60,44 @@ public class MainMenu {
     
     public static Element ElementSelection(Scanner input) {
         Display display = new Display();
-        String[] image = display.getImage1("fire");
+        int option;
         
+        String[] fireImage = display.getImage1("fire");
         System.out.println("--- Element Technical Sheet ---");
-        for (String line : image)
+        for (String line : fireImage)
             System.out.println(line);
         System.out.println("Name: Byte");
         System.out.println("Type: Fire");
         System.out.println("Health: 80");
-        System.out.println("Attack: 60");
-        System.out.println("Defense: 30");
+        System.out.println("Attack: 70");
+        System.out.println("Defense: 20");
         System.out.println("-------------------------------");
 
-        String[] image1 = display.getImage1("nature");
-        
+        String[] natureImage = display.getImage1("nature");
         System.out.println("--- Element Technical Sheet ---");
-        for (String line : image1)
+        for (String line : natureImage)
             System.out.println(line);
         System.out.println("Name: Leaf");
         System.out.println("Type: Nature");
-        System.out.println("Health: 150");
-        System.out.println("Attack: 40");
-        System.out.println("Defense: 50");
+        System.out.println("Health: 120");
+        System.out.println("Attack: 50");
+        System.out.println("Defense: 40");
         System.out.println("-------------------------------");
-        
-        String[] image11 = display.getImage1("water");
-        
+
+        String[] waterImage = display.getImage1("water");
         System.out.println("--- Element Technical Sheet ---");
-        for (String line : image11)
+        for (String line : waterImage)
             System.out.println(line);
         System.out.println("Name: Stream");
         System.out.println("Type: Water");
-        System.out.println("Health: 100");
+        System.out.println("Health: 90");
         System.out.println("Attack: 30");
-        System.out.println("Defense: 100");
+        System.out.println("Defense: 70");
         System.out.println("-------------------------------");
-        
-        String[] image111 = display.getImage1("normal");
-        
+
+        String[] normalImage = display.getImage1("normal");
         System.out.println("--- Element Technical Sheet ---");
-        for (String line : image111)
+        for (String line : normalImage)
             System.out.println(line);
         System.out.println("Name: Null");
         System.out.println("Type: Normal");
@@ -106,6 +105,25 @@ public class MainMenu {
         System.out.println("Attack: 40");
         System.out.println("Defense: 40");
         System.out.println("-------------------------------");
+
+
+        System.out.println("1. Fire");
+        System.out.println("2. Nature");
+        System.out.println("3. Water");
+        System.out.println("4. Normal");
+        System.out.print("Enter the option you want: ");
+        option = input.nextInt();
+        
+        if (option == 1)
+            return new Element("Byte", "fire", 80, 70, 20);
+        else if (option == 2)
+            return new Element("Leaf", "nature", 120, 50, 40);
+        else if (option == 3)
+            return new Element("Stream", "water", 90, 30, 70);
+        else if (option == 4)
+            return new Element("Null", "normal", 100, 40, 40);
+        else
+        	return null;
     }
 
 }
