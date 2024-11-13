@@ -8,8 +8,6 @@ public class Element {
     private int atk;
     private int def;
     
-
-    
     private Random rand = new Random();
     
     public Element(String name, String type, int life, int atk, int def) {
