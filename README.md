@@ -29,8 +29,24 @@
 <h2>📂 File Structure</h2>
 <pre>
 └── Elemental-Battle/
-    ├── MainMenu.java: Entry point of the game.
+    ├── MainMenu.java: Entry point of the game, contains the menu to access game functionalities.
     ├── Element.java: Defines the Element class and manages element actions.
     ├── Battle.java: Contains the loop and logic for managing the battle.
     └── Display.java: Manages the elements and attack visuals.
 </pre>
+
+<h2>📥 Getting Started</h2>
+<p>
+To start playing the Elemental-Battle, follow these steps:
+<ol>
+<li>Clone the repository:</li>
+<pre><code>git clone https://github.com/DavidEricson00/Elemental-Battle.git</code></pre>
+<li>Navigate to the project directory:</li>
+<pre><code>cd Elemental-Battle</code></pre>
+<li>Compile the Java files:</li>
+<pre><code>javac src/*.java</code></pre>
+<li>Run the main menu class:</li>
+<pre><code>java src.MainMenu</code></pre>
+</ol>
+</p>
+
