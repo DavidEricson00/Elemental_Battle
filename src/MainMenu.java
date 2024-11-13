@@ -8,21 +8,24 @@ public class MainMenu {
         Scanner input = new Scanner(System.in);
         int option = -1;
 
-        while (option != 0) {
-        	Menu();
+        while (option != 3) {
+            Menu();
             option = input.nextInt();
             
             if (option == 1) {
-            	System.out.println("Create the Element 1");
-            	e1 = ElementCreate();
-            	System.out.println("Element 1 created");
-            	System.out.println("Create the Element 2");
-            	e2 = ElementCreate();
-            	System.out.println("Element 2 created");
-            	battle.Fight(e1,e2);
-            }
-            if (option == 2) {
-            	ElementSelection();
+                System.out.println("-------------------------------");
+                System.out.println("Create the Element 1");
+                e1 = ElementCreate(input);
+                System.out.println("Element 1 created");
+                System.out.println("Create the Element 2");
+                e2 = ElementCreate(input);
+                System.out.println("Element 2 created");
+                battle.Fight(e1, e2);
+            } else if (option == 2) {
+                System.out.println("-------------------------------");
+                ElementSelection(input);
+            } else if (option != 3) {
+                System.out.println("Invalid option, please try again.");
             }
         }
         System.out.println("Thank you for playing!");
@@ -36,8 +39,7 @@ public class MainMenu {
         System.out.print("Enter the option you want: ");
     }
 
-    public static Element ElementCreate() {
-        Scanner input = new Scanner(System.in);
+    public static Element ElementCreate(Scanner input) {
         int life, atk, def;
         String name, type;
 
@@ -51,11 +53,11 @@ public class MainMenu {
         atk = input.nextInt();
         System.out.print("Enter your Element defense: ");
         def = input.nextInt();
-        input.close();
+
         return new Element(name, type, life, atk, def);
     }
     
-    public static void ElementSelection() {
+    public static Element ElementSelection(Scanner input) {
         Display display = new Display();
         String[] image = display.getImage1("fire");
         
