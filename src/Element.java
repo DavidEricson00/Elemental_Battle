@@ -49,9 +49,10 @@ public class Element {
 
     // Attack methods
     public int Attack(String type1, String type2) {
-    	if (Effective(type1, type2)) {
-    		return rand.nextInt(1, atk)*2;
-    	}return rand.nextInt(1, atk);
+        if (Effective(type1, type2)) {
+            return (int) (rand.nextInt(1, atk) * 1.5);
+        }
+        return rand.nextInt(1, atk);
     }
     
     // Defense methods
