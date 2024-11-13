@@ -21,9 +21,11 @@ public class MainMenu {
             	System.out.println("Element 2 created");
             	battle.Fight(e1,e2);
             }
+            if (option == 2) {
+            	ElementSelection();
+            }
         }
         System.out.println("Thank you for playing!");
-        input.close();
     }
     
     public static void Menu() {
@@ -49,7 +51,59 @@ public class MainMenu {
         atk = input.nextInt();
         System.out.print("Enter your Element defense: ");
         def = input.nextInt();
-
+        input.close();
         return new Element(name, type, life, atk, def);
     }
+    
+    public static void ElementSelection() {
+        Display display = new Display();
+        String[] image = display.getImage1("fire");
+        
+        System.out.println("--- Element Technical Sheet ---");
+        for (String line : image)
+            System.out.println(line);
+        System.out.println("Name: Byte");
+        System.out.println("Type: Fire");
+        System.out.println("Health: 80");
+        System.out.println("Attack: 60");
+        System.out.println("Defense: 30");
+        System.out.println("-------------------------------");
+
+        String[] image1 = display.getImage1("nature");
+        
+        System.out.println("--- Element Technical Sheet ---");
+        for (String line : image1)
+            System.out.println(line);
+        System.out.println("Name: Leaf");
+        System.out.println("Type: Nature");
+        System.out.println("Health: 150");
+        System.out.println("Attack: 40");
+        System.out.println("Defense: 50");
+        System.out.println("-------------------------------");
+        
+        String[] image11 = display.getImage1("water");
+        
+        System.out.println("--- Element Technical Sheet ---");
+        for (String line : image11)
+            System.out.println(line);
+        System.out.println("Name: Stream");
+        System.out.println("Type: Water");
+        System.out.println("Health: 100");
+        System.out.println("Attack: 30");
+        System.out.println("Defense: 100");
+        System.out.println("-------------------------------");
+        
+        String[] image111 = display.getImage1("normal");
+        
+        System.out.println("--- Element Technical Sheet ---");
+        for (String line : image111)
+            System.out.println(line);
+        System.out.println("Name: Null");
+        System.out.println("Type: Normal");
+        System.out.println("Health: 100");
+        System.out.println("Attack: 40");
+        System.out.println("Defense: 40");
+        System.out.println("-------------------------------");
+    }
+
 }
