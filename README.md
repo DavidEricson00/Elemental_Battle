@@ -55,7 +55,6 @@ To start playing the Elemental-Battle, follow these steps:
 <li>Compile the Java files:</li>
 <pre><code>javac src/*.java</code></pre>
 <li>Run the main menu class:</li>
-<pre><code>java src.MainMenu</code></pre>
+<pre><code>java -cp src MainMenu</code></pre>
 </ol>
 </p>
-
