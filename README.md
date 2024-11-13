@@ -35,6 +35,15 @@
     └── Display.java: Manages the elements and attack visuals.
 </pre>
 
+<h2>📦 Dependencies</h2>
+<p>
+Before running the game, make sure you have the following installed:
+<ul>
+<li><strong>Java Development Kit (JDK) version 8 or later:</strong> You will need the JDK to compile and run the Java files. If you don't have it, download it from <a href="https://www.oracle.com/java/technologies/javase-jdk8-downloads.html" target="_blank">here</a>.</li>
+<li><strong>Java Runtime Environment (JRE):</strong> Required to run Java applications.</li>
+</ul>
+</p>
+
 <h2>📥 Getting Started</h2>
 <p>
 To start playing the Elemental-Battle, follow these steps:
