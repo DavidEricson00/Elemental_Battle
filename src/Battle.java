@@ -1,19 +1,18 @@
 public class Battle {
 
     public void Fight(Element e1, Element e2) {
-        Display display = new Display();
         Element attacking = e1;
         Element defending = e2;
         Element aux;
 
-        String[] imageE1 = display.getImage1(e1.getType());
-        String[] imageE2 = display.getImage2(e2.getType());
+        String[] imageE1 = Display.getImage1(e1.getType());
+        String[] imageE2 = Display.getImage2(e2.getType());
 
-        String[] atkE1 = display.getAttack(e1.getType());
-        String[] atkE2 = display.getAttack(e2.getType());
+        String[] atkE1 = Display.getAttack(e1.getType());
+        String[] atkE2 = Display.getAttack(e2.getType());
 
-        String[] block = display.Block();
-        String[] empty = display.Empty();
+        String[] block = Display.Block();
+        String[] empty = Display.Empty();
 
         int dmg, def, impact, turn = 1;
 
