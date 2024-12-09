@@ -1,7 +1,6 @@
-
 public class Display {
 	
-    public String[] getImage1(String type) {
+    public static String[] getImage1(String type) {
         if (type.equals("water")) {
             return new String[] {
                 "    .-^-.          ",
@@ -45,7 +44,7 @@ public class Display {
         } return null;
     }
     
-    public String[] getImage2(String type) {
+    public static String[] getImage2(String type) {
         if (type.equals("water")) {
             return new String[] {
                 "         .-^-.     ",
@@ -89,7 +88,7 @@ public class Display {
         } return null;
     }
     
-    public String[] getAttack(String type) {
+    public static String[] getAttack(String type) {
         if (type.equals("water")) {
             return new String[] {
                 "   ~  🌢  ~  🌢          ",
@@ -133,7 +132,7 @@ public class Display {
         } return null;
     }
 
-    public String[] Block() {
+    public static  String[] Block() {
     	return new String[]{
 			"           __            ",
 			"          |  |           ",
@@ -145,7 +144,7 @@ public class Display {
 		};
     }
     
-    public String[] Empty() {
+    public static  String[] Empty() {
     	return new String[]{
 			"                         ",
 			"                         ",
