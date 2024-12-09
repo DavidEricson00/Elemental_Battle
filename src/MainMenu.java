@@ -66,10 +66,9 @@ public class MainMenu {
     }
     
     public static Element ElementSelection(Scanner input) {
-        Display display = new Display();
         int option;
         
-        String[] fireImage = display.getImage1("fire");
+        String[] fireImage = Display.getImage1("fire");
         System.out.println("--- Element Technical Sheet ---");
         for (String line : fireImage)
             System.out.println(line);
@@ -80,7 +79,7 @@ public class MainMenu {
         System.out.println("Defense: 20");
         System.out.println("-------------------------------");
 
-        String[] natureImage = display.getImage1("nature");
+        String[] natureImage = Display.getImage1("nature");
         System.out.println("--- Element Technical Sheet ---");
         for (String line : natureImage)
             System.out.println(line);
@@ -91,7 +90,7 @@ public class MainMenu {
         System.out.println("Defense: 40");
         System.out.println("-------------------------------");
 
-        String[] waterImage = display.getImage1("water");
+        String[] waterImage = Display.getImage1("water");
         System.out.println("--- Element Technical Sheet ---");
         for (String line : waterImage)
             System.out.println(line);
@@ -102,7 +101,7 @@ public class MainMenu {
         System.out.println("Defense: 70");
         System.out.println("-------------------------------");
 
-        String[] normalImage = display.getImage1("normal");
+        String[] normalImage = Display.getImage1("normal");
         System.out.println("--- Element Technical Sheet ---");
         for (String line : normalImage)
             System.out.println(line);
